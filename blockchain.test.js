@@ -12,7 +12,7 @@ describe('Blockahin', () => {
     it('adds new block to the chain',()=>{
         const newData = 'foo bar';
         blockchain.addBlock({data:newData});
-        expect(blockchain.chain[blockchain.chain.length-1]).toEqual(newData);
+        expect(blockchain.chain[blockchain.chain.length-1].data).toEqual(newData);
     })
 })
 
