@@ -92,7 +92,7 @@ describe('Blockahin', () => {
             describe('and the chain is valid', () => {
                 it('does replace the chain',()=>{
                     blockchain.replaceChain(newChain.chain);
-                    expect(blockchain.chain).toEqual(originalChain);
+                    expect(blockchain.chain).toEqual(newChain.chain);
 
                 })
             })
