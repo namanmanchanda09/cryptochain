@@ -97,7 +97,7 @@ describe('Blockahin', () => {
                 newChain.addBlock({data:'BattleStar Galactica'});
 
             })
-            describe('and the chain is invalid', () => {
+            describe('and the chain is not invalid', () => {
                 beforeEach(()=>{
                     newChain.chain[2].hash = 'fake-hash';
                     blockchain.replaceChain(newChain.chain);
