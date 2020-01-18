@@ -6,9 +6,11 @@ describe('Block',()=>{
     const lastHash = 'foo-lastHash';
     const hash = 'foo-hash';
     const data = ['blockchain','data'];
-    const block = new Block({timestamp,lastHash,hash,data, nonce , difficulty});
     const nonce = 1;
     const difficulty = 1;
+    const block = new Block({timestamp,lastHash,hash,data, nonce,difficulty});
+    
+    
     it('has a timestamp, lastHash, hash, data',()=>{
         expect(block.timestamp).toEqual(timestamp);
         expect(block.lastHash).toEqual(lastHash);
